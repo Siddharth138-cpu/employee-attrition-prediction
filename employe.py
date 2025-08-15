@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 
-df = pd.read_csv("D:\\projects\\sid\\siddd.venv\\Employee-Attrition.csv")
+df = pd.read_csv("Employee-Attrition.csv")
 print(df.columns.tolist())
 
 
@@ -37,3 +37,4 @@ joblib.dump(model, "employee_model.pkl")
 joblib.dump(label_encoders, "label_encoders.pkl")
 
 print("✅ Model & encoders saved successfully!")
+
